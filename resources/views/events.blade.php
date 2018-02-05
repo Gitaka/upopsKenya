@@ -159,13 +159,46 @@
 	
 	</div><!--End of gallery left-->
 	<div class="col-sm-9" style="padding:5%;">
-        <h3 style="padding-bottom:1%;color:#006400;">Upcoming events in the months of January and February.</h3>  
-            <p>1. Kenya Chemical Policy finalization.</p>
+
+        <h3 style="padding-bottom:1%;color:#006400;">Upcoming events.</h3>  
+           <!-- <p>1. Kenya Chemical Policy finalization.</p>
        	    <p>2. Engagement of the informal sector in Sound Chemicals Management.</p>
        	    <p>3. Training workshop on PRTR.</p>
        	    <p>4.	Universities Curriculum review to include MEAS and Sound Chemical Management.</p>
        	    <p>5.	Private Public Partnership in Health Care Management of Waste.</p>
-       	    <p>6.	Awareness creation, Trainings of the Public, MCAs and Health Care Providers on 3Rs, UPOPs and Waste management.</p>
+       	    <p>6.	Awareness creation, Trainings of the Public, MCAs and Health Care Providers on 3Rs, UPOPs and Waste management.</p>-->
+	      
+     <div class="row">
+      <div class="col-sm-12 events-table">
+      	    <div class="col-sm-6">
+                  Title
+            </div>
+            <div class="col-sm-3">
+                  Venue
+            </div>
+            <div class="col-sm-3">
+                  Date
+            </div>
+      </div>
+
+	  @foreach($events as $event)
+
+	    <div class="col-sm-12 events-rows">
+            <div class="col-sm-6">
+            	{{$event->title}}
+            </div>
+            <div class="col-sm-3">
+            	{{$event->venue}}
+            </div>
+            <div class="col-sm-3">
+            	{{$event->date}}
+            </div>
+	 	</div>
+      @endforeach
+
+    <?php echo $events->render(); ?>     	
+     </div>
+
 
 	</div>
 </div>

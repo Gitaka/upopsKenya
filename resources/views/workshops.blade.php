@@ -170,7 +170,22 @@
     <div class="col-sm-6">
 	<div class="functions">
 		<h2 style="padding-bottom:1%;color:#006400;">Workshops</h2>
-         <ul>
+
+		   @foreach($workshops as $workshop)
+             <ul>
+	             <li>
+	         		 <h3 style="padding-bottom:1%;padding-top:1%;color:#000">
+	         		 {{$workshop->title}}</h3>
+	         		 <p>
+	         		    {{substr($workshop->objective,0,200)}} 
+	         		 	
+	         		 	<span>
+	         		 	<a href="{{url('draft')}}/{{$workshop->id}}"><button class="btn btn-default">Readmore</button></a></span>
+	         		 </p>
+	         	</li>                   	
+            </ul>
+		  @endforeach
+         <!--<ul>
                <li>
          		 <h3 style="padding-bottom:1%;padding-top:1%;color:#000">
          		 Workshop on Review of the Draft Chemicals Regulations.</h3>
@@ -217,7 +232,7 @@
          		</p>
          	</li>
          
-         </ul>
+         </ul>-->
 	</div>  
 
  	
@@ -245,7 +260,7 @@
         <div class="downloads-content">
        	   <p class="p-style">
        	     <span><a href="http://www.nema.go.ke">
-       	     National Emergency Management Agency(Nema).</span></a></p>
+       	     National Environment Management Authority(Nema).</span></a></p>
        </div>
        <div class="downloads-content">
        	   <p class="p-style">

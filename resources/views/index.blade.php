@@ -180,7 +180,7 @@
 		<!-- //banner -->
 <div class="row what-we-do" style="padding-left:1%;padding-bottom:2%;background-color:#f2f2f2">
 	<div class="col-sm-3 overview-style">
-		<h4 style="color:#b52e31;font-weight:bold">Chemicals and Waste</h4><br>
+		<h4 style="color:#b52e31;font-weight:bold;">Chemicals and Waste</h4><br>
 		<p style="color:#000;font-size:90%;">
 		   The sound management of chemicals and wastes is an important component of UNDP’s efforts to achieve sustainable, inclusive and resilient human development and the Sustainable Development Goals (SDGs).
 		   UNDP advocates for integrating chemicals management priorities into national environmental and poverty reduction planning frameworks, helps countries access financial and technical resources, and provides assistance and implementation support to improve the holistic management of chemicals and waste at national, regional and global levels.
@@ -190,13 +190,13 @@
 		 
 	</div>
 	<div class="col-sm-3 overview-style">
-		<h4 style="color:#b52e31;font-weight:bold">What we do</h4></br>
+		<h4 style="color:#b52e31;font-weight:bold;">What we do</h4></br>
 		<p style="color:#000;font-size:90%;">
-		The project intend to protect human health and the environment by managing the risks posed by production , use, import and export of chemicals and  reducing or preventing the release of U-POPs and toxic compounds originating from the unsafe management of waste in two key sectors: Health Care Waste and Municipal Waste.</p>
+		The project intends to protect human health and the environment by managing the risks posed by production , use, import and export of chemicals and  reducing or preventing the release of U-POPs and toxic compounds originating from the unsafe management of waste in two key sectors: Health Care Waste and Municipal Waste.</p>
 		
 	</div>
 	<div class="col-sm-3 overview-style">
-		<h4 style="color:#b52e31;font-weight:bold">Partnering</h4></br>
+		<h4 style="color:#b52e31;font-weight:bold;">Partners</h4></br>
 		<p style="color:#000">1) Ministry of Health</p>
 		<p style="color:#000">2) Government Chemist</p>
         <p style="color:#000">3) Water Resource Authority(WRA)</p>
@@ -212,7 +212,7 @@
         
 	</div>
 	<div class="col-sm-2 overview-style">
-      <h4 style="color:#b52e31;font-weight:bold">Waste to Wealth</h4><br>
+      <h4 style="color:#b52e31;font-weight:bold;">Waste to Wealth</h4><br>
 		<p style="color:#000;font-size:90%;">
 			The network of Waste to Wealth was created in Nakuru in 2017 to encourage entrepreneurship in the area of recycling and compost in order to reduce the amounts of wastes going into the dumpsite as well create business opportunities to its members.
 		</p></br>
@@ -260,7 +260,7 @@
         <div class="downloads-content">
        	   <p class="p-style">
        	     <span><a href="http://www.nema.go.ke">
-       	     National Emergency Management Agency(Nema).</span></a></p>
+       	     National Environment Management Authority(Nema).</span></a></p>
        </div>
        <div class="downloads-content">
        	   <p class="p-style">

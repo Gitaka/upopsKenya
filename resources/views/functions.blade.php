@@ -231,7 +231,7 @@
         <div class="downloads-content">
        	   <p class="p-style">
        	     <span><a href="http://www.nema.go.ke">
-       	     National Emergency Management Agency(Nema).</span></a></p>
+       	     National Environment Management Authority(Nema).</span></a></p>
        </div>
        <div class="downloads-content">
        	   <p class="p-style">

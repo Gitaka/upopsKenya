@@ -159,7 +159,23 @@
 	
 	</div><!--End of gallery left-->
 	<div class="col-sm-9 gallery-right">
-		<div class="row">
+		@foreach(array_chunk($images->all(),3) as $row)
+	    @foreach($row as $image)
+			<div class="col-sm-4">
+				<div class="gallery-image">
+					<div class="">
+						
+					</div>
+					<div class="gallery-image-body">
+					<img class="img-rounded" src="{{asset($image->file)}}" width="100%" height="100%">
+						
+					</div>
+				</div>
+			</div>
+        @endforeach
+        @endforeach
+       <?php echo $images->render(); ?>
+		<!--<div class="row">
 			<div class="col-sm-4">
 				<div class="gallery-image">
 					<div class="">
@@ -192,7 +208,7 @@
 			</div>
 		</div><!--Image row 1-->
 
-		<div class="row">
+		<!--<div class="row">
 			<div class="col-sm-4 ">
 				<div class="gallery-image">
 					<div class="">
@@ -224,7 +240,7 @@
 				</div>
 			</div>
 		</div><!--Image row 2-->
-			<div class="row">
+			<!--<div class="row">
 			<div class="col-sm-4 ">
 				<div class="gallery-image">
 					<div class="">
@@ -256,7 +272,7 @@
 				</div>
 			</div>
 		</div><!--Image row 3-->
-			<div class="row">
+			<!--<div class="row">
 			<div class="col-sm-4 ">
 				<div class="gallery-image">
 					<div class="">
@@ -273,7 +289,7 @@
 			<div class="col-sm-4">
 
 			</div>
-		</div><!--Image row 4-->		
+		</div><!--Image row 4-->	
 	</div>
 </div>
 </div>

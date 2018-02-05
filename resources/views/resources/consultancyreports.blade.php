@@ -135,8 +135,37 @@
 	</div>
 
 <div class="row overview-container" style="background-color:#f8f8f8">
- <div class="row resources-panel">
+<div class="row resources-panel">
+	@foreach(array_chunk($reports->all(),2) as $row)
+	  @foreach($row as $report)
+	       <div class="col-sm-5 r-panel-1" style="margin-bottom:2%;">
+	 		<div class="r-panel-header">
+	 			<span><i class="fa fa-paperclip fa-5x" style="color:#fff">&nbsp;</i>
+			     </span>
+	 		</div>
+	 		<div class="r-panel-body">
+	 			<h5>{{$report->title}}</h5></br>
+	 			<h6><strong>Category:</strong>
+	                <span>{{$report->category}}</span>
+	                
+	 			</h6>
+	 		</div>
+	 		<div class=" well well-sm r-panel-footer">
+	 		  <a href="{{$report->file}}" download>
+	 			<button class="btn btn-lg btn-primary" style="width:100%">
+	 			<span>Download</span>&nbsp;&nbsp;&nbsp;&nbsp;
+	 			<span><i class="fa fa-download" style="color:#fff">&nbsp;</i></span>
 
+	 			</button> 		  	
+	 		  </a>
+
+	 		</div>
+	 	</div>
+      @endforeach
+    @endforeach
+    <?php echo $reports->render(); ?>
+</div>
+ <div class="row resources-panel">
  	<div class="col-sm-5 r-panel-1">
  		<div class="r-panel-header">
  			<span><i class="fa fa-paperclip fa-5x" style="color:#fff">&nbsp;</i>

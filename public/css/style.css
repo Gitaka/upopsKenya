@@ -67,6 +67,7 @@ ol {
     margin-right:1%;
     background-color:#fff;
     border-radius:5px;
+    height:350px;
 }
 .overview-style p {
     color:#fff;
@@ -208,6 +209,19 @@ h6{
 .gallery-image-body{
  height:80%;
 }
+.events-table{
+    background-color:#d8d8d8;
+    padding-top:2%;
+    padding-bottom:1%;
+    font-weight:bold;
+    font-size:110%;
+}
+.events-rows{
+    border-bottom:1px solid #d8d8d8;
+    padding-bottom:1%;
+    padding-top:2%;
+}
+
 /**************************************************************/
 
 

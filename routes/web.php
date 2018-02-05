@@ -26,9 +26,10 @@ Route::get('/functions',function(){
 Route::get('projects',function(){
 	return view('projects');
 });
-Route::get('workshops',function(){
+Route::get('workshops','UsersController@workshops');
+/*Route::get('workshops',function(){
 	return view('workshops');
-});
+});*/
 Route::get('stockholm',function(){
 	return view('stockholm');
 });
@@ -47,9 +48,11 @@ Route::get('contactUs',function(){
 Route::get('workshop',function(){
 	return view('shop');
 });
-Route::get('draft',function(){
+
+Route::get('draft/{id}','UsersController@draft');
+/*Route::get('draft',function(){
 	return view('draft');
-});
+});*/
 Route::get('saicm',function(){
 	return view('saicm');
 });
@@ -99,22 +102,27 @@ Route::get('agroprojects',function(){
 Route::get('agroworkshops',function(){
 	return view('agro.workshops');
 });
-Route::get('consultancy_reports',function(){
-	return view('resources.consultancyreports');
-});
-Route::get('project_documents',function(){
-	return view('resources.projectdocuments');
-});
 
-Route::get('gallery',function(){
+Route::get('consultancy_reports','UsersController@c_reports');
+/*Route::get('consultancy_reports',function(){
+	return view('resources.consultancyreports');
+});*/
+Route::get('project_documents','UsersController@p_documents');
+/*Route::get('project_documents',function(){
+	return view('resources.projectdocuments');
+});*/
+
+Route::get('gallery','UsersController@gallery');
+/*Route::get('gallery',function(){
 	return view('gallery');
-});
+});*/
 Route::get('wastetowealth',function(){
 	return view('wastetowealth');
 });
-Route::get('events',function(){
+Route::get('events','UsersController@events');
+/*Route::get('events',function(){
 	return view('events');
-});
+});*/
 Route::get('partners',function(){
 	return view('partners');
 });
@@ -122,10 +130,30 @@ Route::get('news',function(){
 	return view('news');
 });
 Route::get('signin','UsersController@signin');
+Route::get('logout','UsersController@logout');
 Route::post('auth','UsersController@authenticate');
 Route::get('register','UsersController@register');
 Route::post('createUser','UsersController@createUser');
 
 Route::Group(['middleware'=>'auth'],function(){
-	Route::get('home','HomeController@home');
+	
+	 Route::Group(['middleware'=>'AdminAuth'],function(){
+	 	  Route::get('admin','HomeController@adminHome');
+	 	  Route::get('createReport','HomeController@createReport');
+	 	  Route::post('createReport','HomeController@storeReport');
+
+	 	  Route::get('createEvent','HomeController@createEvent');
+	 	  Route::post('createEvent','HomeController@storeEvent');
+
+	 	  Route::get('createWorkshop','HomeController@createWorkshop');
+	 	  Route::post('createWorkshop','HomeController@storeWorkshop');
+
+	 	  Route::get('addToGallery','HomeController@addToGallery');
+	 	  Route::post('addToGallery','HomeController@storeImages');
+
+	 });
+	 Route::Group(['middleware'=>'UserAuth'],function(){
+	 	  Route::get('user','HomeController@userHome');
+	 });
+
 });

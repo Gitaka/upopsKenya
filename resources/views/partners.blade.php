@@ -175,8 +175,8 @@
         </br>
 
         <h4>3.  Private Sector</h4>
-        <p>-	Green Belt Movement</p>
-        <p>-	Kenya Disaster Concern</p>
+        <p>-	Kenya Association of Manufacturers</p>
+        
         </br>
         
         <h4>4.	Research Institutions</h4>

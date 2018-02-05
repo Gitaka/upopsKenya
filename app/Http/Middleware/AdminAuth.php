@@ -2,12 +2,11 @@
 
 namespace App\Http\Middleware;
 
-
 use Closure;
 use Response;
 use Illuminate\Support\Facades\Auth;
 
-class userAuth
+class AdminAuth
 {
     /**
      * Handle an incoming request.
@@ -17,11 +16,10 @@ class userAuth
      * @return mixed
      */
     public function handle($request, Closure $next)
-    {
-       if(Auth::user()->access < 1){
+    {   
+        if(Auth::user()->access > 0){
             return Response::View('errors.401');
         }
-      
         return $next($request);
     }
 }

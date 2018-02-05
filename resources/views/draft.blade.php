@@ -137,6 +137,7 @@
     <div class="col-sm-3">
     	<div class="projects">
     		<h2 style="color:#b52e31">Projects</h2></br>
+
     		<p>
     			1) Identification and Quantification of dioxions and furans release in kenya.
     			<a href="{{url('projects')}}">Read more</a>
@@ -172,46 +173,26 @@
     </div>
     <div class="col-sm-6">
 	<div class="functions">
-		<h2 style="padding-bottom:1%;color:#006400;">Workshop On 
-		 Review of the Draft Chemicals Regulations</h2>
-		<h3>Naivasha
-           </br>
-           26th - 39th June 2017
-		</h3></br>
 
-		<h4>Workshop Objective</h4>
-		<p>
-			The main objective was to address how chemicals and waste issues in the Basel, Rotterdam, Stockholm and Minamata Conventions can be domesticated.
-		</p></br>
-          
-          <ul>
-          	<li>
-          	  i) Do a gap analysis for chemicals and wastes.
-          	</li>
-          	<li>
-          		ii)	Get a view of stakeholder consultations for recommendations made in the March meeting.
-          	</li>
-          	<li>
-          		iii) Make draft recommendations to be incorporated in the draft regulations
-          	</li>
-          	<li>
-          		iv)	Address the  relevant provisions of the Minamata Convention
-          	</li>
-          	<li>
-          		v)	Prepare an information and policy note
-          	</li>
-          	<li>
-          		vi)	Consider other stakeholders’ views
-          	</li>
-          </ul>
-           </br>
-         
-            
-          <br>
+
+    	 @foreach($draft as $draft)
+ 		       <h2 style="padding-bottom:1%;color:#006400;">{{$draft->title}}</h2> 
+ 		       <h3>{{$draft->location}}<br>
+                   {{$draft->date}}
+ 		       </h3>  </br>       
+ 		       <h4>Workshop Objective</h4>  
+ 		       </br>
+ 		       <p>{{$draft->objective}}
+
+ 		                 <br>
           <h5>Download document on: 
             
-           <a href="downloads/RCR.pdf" download style="color:red">WORKSHOP ON REVIEW OF THE DRAFT CHEMICALS REGULATIONS</a>
+           <a href="{{$draft->file}}" download style="color:red">{{$draft->title}}</a>
           </h5>
+		  @endforeach
+         
+            
+
 	</div>  
 
  	
@@ -239,7 +220,7 @@
         <div class="downloads-content">
        	   <p class="p-style">
        	     <span><a href="http://www.nema.go.ke">
-       	     National Emergency Management Agency(Nema).</span></a></p>
+       	     National Environment Management Authority(Nema).</span></a></p>
        </div>
        <div class="downloads-content">
        	   <p class="p-style">
