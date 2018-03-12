@@ -6,9 +6,12 @@
 	<link href="{{ asset('/css/app.css') }}" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="{{asset('css/bootstrap.min.css')}}">
 	<link rel="stylesheet" href="{{asset('font-awesome/css/font-awesome.min.css')}}">
+
 	<link href='//fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
-	<script type="text/javascript" src="{{asset('js/jquery.js')}}"></script>
-	<script type="text/javascript" src="{{asset('js/bootstrap.min.js')}}"></script>
+
+
+
+
 </head>
 <body>
 @section('container')
@@ -53,11 +56,15 @@
                                         <input type="text" class="form-control" name="venue" placeholder="Event Venue">
                                     </div>
                                 </div>     
+
+                                
                                  <div class="form-group">
                                     <label for="firstname" class="col-md-4 control-label">Date</label>
                                     <div class="col-md-8">
-                                        <input type="text" class="form-control" name="date" placeholder="Event Date">
+                                        <input type="text" class="form-control" name="date" placeholder="Event Date" id = "datepicker-1">
                                     </div>
+
+                                   
                                 </div>  
 
                                 <div class="form-group">
@@ -90,6 +97,10 @@
                 
          </div> 
 </div>
+    <script type="text/javascript" src="{{asset('js/jquery.js')}}"></script>
+    <script type="text/javascript" src="{{asset('js/bootstrap.min.js')}}"></script>
 @stop
+
+
 </body>
 </html>

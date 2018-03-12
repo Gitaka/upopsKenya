@@ -57,7 +57,7 @@
                                 <div class="form-group">
                                     <label for="firstname" class="col-md-4 control-label">File(PDF DOCUMENT)</label>
                                     <div class="col-md-8">
-                                         <input type="file"placeholder="File"class="form-control" name="report_file"></br>
+                                         <input type="file" placeholder="file" class="form-control" name="report_file"></br>
                                     </div>
                                 </div>
                                     

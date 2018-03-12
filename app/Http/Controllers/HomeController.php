@@ -31,7 +31,7 @@ class HomeController extends Controller
 
     public function storeReport(Request $request){
     	$this->validate($request,[
-        'file'=>'required',
+        'report_file'=>'required',
         'title'=>'required',
         'category'=>'required',
 

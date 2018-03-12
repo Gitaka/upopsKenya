@@ -111,7 +111,15 @@
 </div>
 
 
+ <link href="{{asset('jquery-ui/jquery-ui.css')}}" rel="stylesheet">
+
 <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<script src="{{asset('jquery-ui/jquery-ui.js')}}"></script>
+    <script>
+         $(function() {
+            $( "#datepicker-1" ).datepicker();
+         });
+      </script>
 	<!-- //js -->
 	<!-- stats -->
 	<script src="js/jquery.waypoints.min.js"></script>

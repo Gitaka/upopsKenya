@@ -56,7 +56,7 @@
                                  <div class="form-group">
                                     <label for="firstname" class="col-md-4 control-label">Date</label>
                                     <div class="col-md-8">
-                                        <input type="text" class="form-control" name="date" placeholder="Workshop Date">
+                                        <input type="text" class="form-control" name="date" placeholder="Workshop Date" id = "datepicker-1">
                                     </div>
                                 </div>  
 

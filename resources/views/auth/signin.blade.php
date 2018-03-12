@@ -12,8 +12,8 @@
 <body>
 <div class="container"> 
 
-	        <div id="signupalert" class="alert alert-success">
-                     <h3>Signin</h3>             
+	        <div id="signupalert" class="panel">
+                     <h3>Upops Kenya</h3>             
               </div>
 	        <div id="loginbox" style="margin-top:50px;" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">                    
             <div class="panel panel-primary" >
@@ -68,7 +68,7 @@
                                     <div class="col-md-12 control">
                                         <div style="border-top: 1px solid#888; padding-top:15px; font-size:85%" >
                                             Don't have an account! 
-                                        <a href="{{url('register')}}" >
+                                        <a href="{{url('#')}}" >
                                             Sign Up Here
                                         </a>
                                         </div>
